@@ -44,7 +44,7 @@ const Tasks = () => {
   return (
     <>
       <div className="my-2 mx-auto max-w-[1200px] py-4">
-      <SlidingTextBoxes data={data}/>
+
         {tasks.length !== 0 && <><div className='flex justify-between'><h2 className='my-2 ml-2 md:ml-0 text-xl'>Your tasks ({tasks.length})</h2>        
         <div className='space-x-2'>
           <select className='p-2' onChange={(e)=>{setStype(e.target.value)}}>
