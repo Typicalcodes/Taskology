@@ -1,8 +1,15 @@
 # Taskology
 
 A MERN application for basic tasks management.
+
+## Home page
+![image](https://github.com/Typicalcodes/Taskology/blob/master/frontend/public/Home.png)
+
+## Tasks list with search options.
 ![image](https://github.com/Typicalcodes/Taskology/blob/master/frontend/public/Scr.png)
-![image]()
+
+## Adding tasks.
+![image](https://github.com/Typicalcodes/Taskology/blob/master/frontend/public/add.png)
 
 
 ## Features
