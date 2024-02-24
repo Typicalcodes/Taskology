@@ -8,7 +8,7 @@ A MERN application for basic tasks management.
 ## Tasks list with search options.
 ![image](https://github.com/Typicalcodes/Taskology/blob/master/frontend/public/Scr.png)
 
-## Adding tasks.
+## Adding/Editing tasks.
 ![image](https://github.com/Typicalcodes/Taskology/blob/master/frontend/public/add.png)
 
 
