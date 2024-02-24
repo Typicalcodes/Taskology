@@ -3,8 +3,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
 import Loader from './utils/Loader';
-import Input from './utils/Input';
-import SlidingTextBoxes from './utils/Slider';
+
 
 
 const Tasks = () => {
@@ -12,7 +11,7 @@ const Tasks = () => {
   const authState = useSelector(state => state.authReducer);
   const [tasks, setTasks] = useState([]);
   const [search, setSearch] = useState("");
-  const [stype, setStype] = useState("");
+  const [stype, setStype] = useState("title");
   const [fetchData, { loading }] = useFetch();
 
   const fetchTasks = useCallback(() => {
@@ -35,11 +34,6 @@ const Tasks = () => {
     console.log("")
   },[search])
 
-  const data = [
-    "Slide 1: This is the content for slide 1",
-    "dfas",
-    "dsfae3 mn erwser"
-  ];
 
   return (
     <>
@@ -62,7 +56,7 @@ const Tasks = () => {
 
               <div className='w-[600px] h-[300px] flex  flex-row items-center justify-start gap-4'>
                 <span>No tasks found</span>
-                <Link to="/tasks/add" className="bg-blue-500 text-white hover:bg-blue-600 font-medium rounded-md px-4 py-2">+ Add new task </Link>
+                <Link to="/tasks/add" className="bg-slate-600 text-white hover:bg-slate-800 font-medium rounded-md px-4 py-2">+ Add new task </Link>
               </div>
 
             ) : (

@@ -49,6 +49,11 @@ export const validate = (group, name, value) => {
         if (value.length > 100) return "Max. limit is 100 characters.";
         return null;
       }
+      case "title": {
+        if (!value) return "This field is required";
+        if (value.length > 50) return "Max. limit is 50 characters.";
+        return null;
+      }
       default: return null;
     }
   }
